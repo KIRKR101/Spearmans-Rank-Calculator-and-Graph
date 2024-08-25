@@ -3,7 +3,14 @@ Simple PyQt5 GUI to calculate Spearman's rank correlation coefficient.
 
 This is a Python application with a GUI that calculates Spearman's Rank Correlation Coefficient (SRCC). It allows users to input data manually or import data from a CSV file. The application provides the correlation coefficient, the type of correlation, and the strength of the correlation. The result can be exported as PNG or CSV.
 
-The formula for Spearman's Rank Correlation Coefficient (\(\rho\)) is: \[ \rho = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)} \]
+$$
+\rho = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)}
+$$
+
+Where:
+- \( \rho \) is the Spearman's Rank Correlation Coefficient.
+- \( d_i \) is the difference between the ranks of corresponding values.
+- \( n \) is the number of observations.
 
 ## Features
 - Ability to: Input data manually in various number formats or import data from CSV files, like the example `spearmans-correlation-data.csv`
